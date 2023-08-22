@@ -1,4 +1,5 @@
 {% macro govukHeader(params) %}
+<div class="dutch-logo-above-header"></div>
 <header class="govuk-header {{ params.classes if params.classes }}" role="banner" data-module="govuk-header"
         {%- for attribute, value in (params.attributes.items() if params.attributes else {}.items()) %} {{attribute}}="{{value}}"{% endfor %}>
   <div class="govuk-header__container {{ params.containerClasses | default('govuk-width-container') }}">
